@@ -55,7 +55,7 @@ $(document).ready(function(){
       $( function() { 
 
         $( "#codigo" ).autocomplete({
-            source: "/Sonesta2/public/producto/autocomplete",
+            source: "/antonio/public/producto/autocomplete",
             minlenght:1,
             autoFocus:true,
             select:function(e,ui){
@@ -108,11 +108,6 @@ $("#total" ).focus(function() {
 //     });
 // });
 
-
-function confirmar(){
-      //un confirm
-
-};
 
 
 
@@ -181,7 +176,7 @@ $("#btnRecorrer").click(function () {
 
 
 
-    var route1 = "/Sonesta2/public/venta";
+    var route1 = "/antonio/public/venta";
     var token = $("#token").val();
 
     alert("precio total"+preciototal);
@@ -228,7 +223,7 @@ $("#btnRecorrer").click(function () {
 
 
 
-            var route = "/Sonesta2/public/detalleventa";
+            var route = "/antonio/public/detalleventa";
             var token = $("#token").val();
 
             $.ajax({
@@ -266,7 +261,7 @@ $("#btnRecorrer").click(function () {
                 $(this).css("background-color", "#ECF8E0");
             })
 
-                var route = "/Sonesta2/public/pagoventa";
+                var route = "/antonio/public/pagoventa";
                 var token = $("#token").val();
 
                 $.ajax({
@@ -301,7 +296,7 @@ $("#btnRecorrer").click(function () {
                             var comision=(monto*3/100)/numerovendedores;
                             alert(vendedor);
 
-                            var route = "/Sonesta2/public/ventausuario";
+                            var route = "/antonio/public/ventausuario";
                             var token = $("#token").val();
 
                             $.ajax({
@@ -323,7 +318,7 @@ $("#btnRecorrer").click(function () {
 
             })//fin recorrido moneda
 
-                        swal("SUCCESSFULL!", "VENTA AGREGADA CORRECTAMENTE.", "success", window.location.href = "/Sonesta2/public/venta");
+                        swal("SUCCESSFULL!", "VENTA AGREGADA CORRECTAMENTE.", "success");
 
 
 
@@ -334,7 +329,7 @@ $("#btnRecorrer").click(function () {
                         swal("CANCELADO","UD A CANCELADO LA OPERACION ","error");   
                     }
 
-                //window.location.href = "/Sonesta2/public/venta";        
+                //window.location.href = "/fff/public/venta";        
                 });
     
 });

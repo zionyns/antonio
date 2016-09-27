@@ -1,7 +1,7 @@
 $(document).ready(function(){
       $( function() {    
         $( "#codigo" ).autocomplete({
-            source: "/Sonesta2/public/producto/autocomplete",
+            source: "/antonio/public/producto/autocomplete",
             minlenght:1,
             autoFocus:true,
             select:function(e,ui){
@@ -93,7 +93,7 @@ $("#btnRecorrer").click(function () {
 
 		alert(codigo + ' - ' + fecha + ' - ' + ' - '); 
 
-		var route1 = "/Sonesta2/public/ingreso";
+		var route1 = "/antonio/public/ingreso";
 		var token = $("#token").val();
 
 		$.ajax({
@@ -139,7 +139,7 @@ $("#btnRecorrer").click(function () {
 
 
 
-            var route = "/Sonesta2/public/detalleingreso";
+            var route = "/antonio/public/detalleingreso";
 			var token = $("#token").val();
 
 			$.ajax({

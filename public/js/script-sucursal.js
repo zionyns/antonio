@@ -69,7 +69,7 @@ $(document).ready(function(){
 function Carga(){
 	//tabla donde duardamos la lista de sucursales
 	var tablaDatos = $("#Tsucursal > tbody");
-	var route = "/Sonesta2/public/sucursal";
+	var route = "/antonio/public/sucursal";
 
 	$("#Tsucursal > tbody").empty();
 
@@ -100,7 +100,7 @@ function Carga(){
 
 
 function Eliminar(btn){
-	var route = "/Sonesta2/public/sucursal/"+btn.value+"";
+	var route = "/antonio/public/sucursal/"+btn.value+"";
 	var token = $("#token").val();
 	$.ajax({
 		url: route,
@@ -116,7 +116,7 @@ function Eliminar(btn){
 
 
 function Mostrar(btn){
-	var route = "/Sonesta2/public/sucursal/"+btn.value+"/edit";
+	var route = "/antonio/public/sucursal/"+btn.value+"/edit";
 
 	$.get(route, function(res){
 		
@@ -185,7 +185,7 @@ $(document).on('click', '#registro-sucursal',function (){
 	
 	//ruta a la que hacemos referencia
 	
-	var route = "/Sonesta2/public/sucursal";
+	var route = "/antonio/public/sucursal";
 	var token = $("#token").val();
 
 	$.ajax({

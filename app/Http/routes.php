@@ -45,6 +45,9 @@ Route::get('template', function(){
 //////////////////////////////////////////////////7
 Route::resource('usuario','UsuarioController');
 
+
+route::get('producto/faltante',array('as'=>'faltante','uses'=>'ProductoController@faltante'));
+
 route::	get('producto/autocomplete',array('as' =>'autocomplete','uses' =>'ProductoController@autocomplete'));
 Route::resource('producto','ProductoController');
 
