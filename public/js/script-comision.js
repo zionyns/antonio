@@ -5,7 +5,7 @@ function Carga(nombre,fechaInicial,fechaFinal){
 	//tabla donde duardamos la lista de comisiones
 	var tablaDatos = $("#tablaComisiones > tbody");
 	
-	var route = "/Sonesta2/public/comisiones";
+	var route = "/antonio/public/comisiones";
 
 	var vendedor=$("#vendedor").val();
 	
@@ -59,7 +59,7 @@ function array_push(arreglo_monedas,arreglo_comisiones,moneda,comision)
 		if (arreglo_monedas[i]==moneda) 
 		{
 			existe=true;
-			arreglo_comisiones[i]=parseInt(arreglo_comisiones[i])+parseInt(comision);
+			arreglo_comisiones[i]=parseFloat(arreglo_comisiones[i])+parseFloat(comision);
 		}
 	}
 	if (existe==false)//si el elemento no existe en el arreglo_monedas se agrega

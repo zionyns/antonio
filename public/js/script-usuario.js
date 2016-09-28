@@ -114,7 +114,7 @@ $(document).ready(function(){
 function Carga(){
 	//tabla donde duardamos la lista de sucursales
 	var tablaDatos = $("#Tusuarios > tbody");
-	var route = "/Sonesta2/public/usuario";
+	var route = "/antonio/public/usuario";
 
 	$("#Tusuarios > tbody").empty();
 
@@ -141,35 +141,6 @@ function Carga(){
 }
 
 
-function Eliminar(btn){
-	var route = "/Sonesta2/public/sucursal/"+btn.value+"";
-	var token = $("#token").val();
-	$.ajax({
-		url: route,
-		headers: {'X-CSRF-TOKEN': token},
-		type: 'DELETE',
-		dataType: 'json',
-		success: function(){
-			Carga();
-			$("#msj-success").fadeIn();
-		}
-	});
-}
-
-
-function Mostrar(btn){
-	var route = "/Sonesta2/public/sucursal/"+btn.value+"/edit";
-
-	$.get(route, function(res){
-		
-		$("#id").val(res.id);
-		$("#CodSucursal").val(res.CodSucursal);
-		$("#NombreSucursal").val(res.NombreSucursal);
-		$("#Direccion").val(res.Direccion);
-
-	});
-}
-
 
 
 
@@ -184,7 +155,7 @@ $(document).on('click', '#actualizar',function (){
 	var dato1 = $("#CodSucursal").val();
 	var dato2 = $("#NombreSucursal").val();
 	var dato3 = $("#Direccion").val();
-	var route = "/Sonesta2/public/sucursal/"+value+"";
+	var route = "/antonio/public/sucursal/"+value+"";
 	var token = $("#token").val();
 
 
@@ -240,7 +211,7 @@ $(document).on('click', '#registro-usuario',function (){
 
 	alert(username+"/"+first_name+"/"+last_name+"/"+email+"/"+sucursal+"/"+rol+"/"+password+"/"+password);
 	
-	var route = "/Sonesta2/public/usuario";
+	var route = "/antonio/public/usuario";
 	var token = $("#token").val();
 
 	$.ajax({

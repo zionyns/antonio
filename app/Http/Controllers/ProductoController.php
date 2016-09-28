@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use App\producto;
 use App\sucursal;
 use Auth;
-
+use DB;
 use Illuminate\Http\Request;
 
 use Session;
@@ -59,7 +59,8 @@ class ProductoController extends Controller {
 	 */
 	public function create()
 	{
-		return view('producto.create');
+		$sucursales = sucursal::all();
+		return view('producto.create',compact('sucursales'));
 	}
 
 	/**

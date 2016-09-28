@@ -50,8 +50,12 @@
                         <select id="vendedor" class="form-control" onchange="selecOp();">
                         <option value="0" selected>Seleccione vendedor...</option>
                         @foreach ($users as $u) {
-                        <option value="{{$u->username}}">{{ $u->first_name }}</option>
-                        @endforeach  
+                        
+                        @if (Auth::user()->sucursal == $u->sucursal)
+                        
+                            <option value="{{$u->username}}">{{ $u->first_name }}</option>
+                        @endif
+                        @endforeach 
                         </select>
                     </div>
                     </div>  
@@ -537,6 +541,10 @@
                 nombre: texto.trim(),
                 
             };
+            if (valor == 0) 
+            {
+                return;
+            }
             for (var i = 1; i < tablavendedores.rows.length; i++)
             {
                 cellsOfRow = tablavendedores.rows[i].getElementsByTagName('td');

@@ -15,7 +15,18 @@ class VentasController extends Controller {
 	 *
 	 * @return Response
 	 */
+	public function ventausuario(Request $request)
+	{
 
+		if ($request->ajax()) {
+			$nombreusuario = Auth::user()->username;
+			$ventausuario=DB::table('ventas')->where('ventas.vendedor',$nombreusuario)->get();
+
+            //$ventausuario = venta::all();
+            return response()->json($ventausuario);
+        }
+        return view('ventas.ventasvendedor');
+	}
 
 	public function index(Request $request)
 	{

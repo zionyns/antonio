@@ -55,7 +55,7 @@ $(document).ready(function(){
       $( function() { 
 
         $( "#codigo" ).autocomplete({
-            source: "/Sonesta2/public/producto/autocomplete",
+            source: "/antonio/public/producto/autocomplete",
             minlenght:1,
             autoFocus:true,
             select:function(e,ui){
@@ -67,7 +67,7 @@ $(document).ready(function(){
                 $('#nombre').val(ui.item.nombre);
                 $('#precio').val(ui.item.precio);
                 $('#stock').val(ui.item.stock);
-                console.log(ui.item.stock);
+                //console.log(ui.item.stock);
             }
         });
     });
@@ -104,7 +104,7 @@ $("#total" ).focus(function() {
 //         $("#peso").val(res.peso);
 //         $("#precio").val(res.precio);
         
-//         console.log(res.nombre);
+//         //console.log(res.nombre);
 //     });
 // });
 
@@ -136,7 +136,7 @@ $("#btnRecorrer").click(function () {
     var numerovendedores = $('#tablavendedores tr').length;
     numerovendedores=numerovendedores-1;
     
-    //alert('numero de filas'+numerovendedores);
+    ////alertt('numero de filas'+numerovendedores);
     
     ///////////////////////////////////////////////////////////////////////////
     var hoy = new Date();
@@ -181,14 +181,14 @@ $("#btnRecorrer").click(function () {
 
 
 
-    var route1 = "/Sonesta2/public/venta";
+    var route1 = "/antonio/public/venta";
     var token = $("#token").val();
 
-    alert("precio total"+preciototal);
-    alert("vendedor :"+vendedor);
+    //alertt("precio total"+preciototal);
+    //alertt("vendedor :"+vendedor);
 
-    console.log(idProducto,codigo,fecha,tipomoneda,preciototal,vendedor,descuento);
-    alert(descuento);
+    //console.log(idProducto,codigo,fecha,tipomoneda,preciototal,vendedor,descuento);
+    //alertt(descuento);
         $.ajax({
             url: route1,
             headers: {'X-CSRF-TOKEN': token},
@@ -224,11 +224,11 @@ $("#btnRecorrer").click(function () {
                 $(this).css("background-color", "#ECF8E0");
             })
 
-            alert(campo1 + ' - ' + campo2 + ' - ' + campo3+ ' - ' + campo4+ ' - ' + campo5);
+            //alertt(campo1 + ' - ' + campo2 + ' - ' + campo3+ ' - ' + campo4+ ' - ' + campo5);
 
 
 
-            var route = "/Sonesta2/public/detalleventa";
+            var route = "/antonio/public/detalleventa";
             var token = $("#token").val();
 
             $.ajax({
@@ -266,7 +266,7 @@ $("#btnRecorrer").click(function () {
                 $(this).css("background-color", "#ECF8E0");
             })
 
-                var route = "/Sonesta2/public/pagoventa";
+                var route = "/antonio/public/pagoventa";
                 var token = $("#token").val();
 
                 $.ajax({
@@ -299,9 +299,9 @@ $("#btnRecorrer").click(function () {
                             })
 
                             var comision=(monto*3/100)/numerovendedores;
-                            alert(vendedor);
+                            //alertt(vendedor);
 
-                            var route = "/Sonesta2/public/ventausuario";
+                            var route = "/antonio/public/ventausuario";
                             var token = $("#token").val();
 
                             $.ajax({
@@ -323,7 +323,7 @@ $("#btnRecorrer").click(function () {
 
             })//fin recorrido moneda
 
-                        swal("SUCCESSFULL!", "VENTA AGREGADA CORRECTAMENTE.", "success", window.location.href = "/Sonesta2/public/venta");
+                        swal("SUCCESSFULL!", "VENTA AGREGADA CORRECTAMENTE.", "success", window.location.href = "/antonio/public/venta/ventausuario");
 
 
 
@@ -334,7 +334,7 @@ $("#btnRecorrer").click(function () {
                         swal("CANCELADO","UD A CANCELADO LA OPERACION ","error");   
                     }
 
-                //window.location.href = "/Sonesta2/public/venta";        
+                //window.location.href = "/antonio/public/venta";        
                 });
     
 });

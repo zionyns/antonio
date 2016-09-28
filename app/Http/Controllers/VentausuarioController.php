@@ -4,6 +4,8 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\ventausuario;
 use Illuminate\Http\Request;
+use venta;
+use DB;
 
 class VentausuarioController extends Controller {
 
@@ -12,9 +14,9 @@ class VentausuarioController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function index()
+	public function index(Request $request)
 	{
-		//
+		
 	}
 
 	/**
