@@ -34,8 +34,8 @@
                 <i class="fa fa-user"></i> <span>USUARIOS</span> <i class="fa fa-angle-left pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
-                    <li class="active"><a href="/Sonesta2/public/usuario/create"><i class="fa fa-user-plus"></i>NUEVO</a></li>
-                    <li><a href="/Sonesta2/public/usuario"><i class="fa fa-eye"></i>LISTAR</a></li>
+                    <li class="active"><a href="/antonio/public/usuario/create"><i class="fa fa-user-plus"></i>NUEVO</a></li>
+                    <li><a href="/antonio/public/usuario"><i class="fa fa-eye"></i>LISTAR</a></li>
                     <!--
                     <li><a href="/Joyeria/public/genero"><i class="fa fa-circle-o"></i> Ejemplo Genero</a></li>-->
                 </ul>
@@ -50,8 +50,8 @@
                 <i class="fa fa-sitemap"></i> <span>SUCURSALES</span> <i class="fa fa-angle-left pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
-                    <li class="active"><a href="/Sonesta2/public/sucursal/create"><i class="fa fa-plus-square"></i>NUEVO</a></li>
-                    <li><a href="/Sonesta2/public/sucursal"><i class="fa fa-eye"></i>LISTAR</a></li>
+                    <li class="active"><a href="/antonio/public/sucursal/create"><i class="fa fa-plus-square"></i>NUEVO</a></li>
+                    <li><a href="/antonio/public/sucursal"><i class="fa fa-eye"></i>LISTAR</a></li>
                     <!--
                     <li><a href="/Joyeria/public/genero"><i class="fa fa-circle-o"></i> Ejemplo Genero</a></li>-->
                 </ul>
@@ -68,8 +68,8 @@
                 <i class="fa fa-dashboard"></i> <span>PRODUCTOS</span> <i class="fa fa-angle-left pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
-                    <li class="active"><a href="/Sonesta2/public/producto/create"><i class="fa fa-plus-square"></i>NUEVO</a></li>
-                    <li><a href="/Sonesta2/public/producto"><i class="fa fa-eye"></i>LISTAR</a></li>
+                    <li class="active"><a href="/antonio/public/producto/create"><i class="fa fa-plus-square"></i>NUEVO</a></li>
+                    <li><a href="/antonio/public/producto"><i class="fa fa-eye"></i>LISTAR</a></li>
                     <!--
                     <li><a href="/Joyeria/public/genero"><i class="fa fa-circle-o"></i> Ejemplo Genero</a></li>-->
                 </ul>
@@ -87,8 +87,8 @@
                 <i class="fa fa-angle-left pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="/Sonesta2/public/venta/create"><i class="fa fa-plus-square"></i>NUEVO</a></li>
-                    <li><a href="/Sonesta2/public/venta"><i class="fa fa-eye"></i>LISTAR</a></li>
+                    <li><a href="/antonio/public/venta/create"><i class="fa fa-plus-square"></i>NUEVO</a></li>
+                    <li><a href="/antonio/public/venta"><i class="fa fa-eye"></i>LISTAR</a></li>
                    
                 </ul>
             </li>
@@ -104,8 +104,8 @@
                 <i class="fa fa-angle-left pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="/Sonesta2/public/ingreso/create"><i class="fa fa-plus-square"></i>NUEVO</a></li>
-                    <li><a href="/Sonesta2/public/ingreso"><i class="fa fa-eye"></i>LISTAR</a></li>
+                    <li><a href="/antonio/public/ingreso/create"><i class="fa fa-plus-square"></i>NUEVO</a></li>
+                    <li><a href="/antonio/public/ingreso"><i class="fa fa-eye"></i>LISTAR</a></li>
 
                 </ul>
             </li>
@@ -122,7 +122,7 @@
                 <i class="fa fa-angle-left pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="/Sonesta2/public/comisiones"><i class="fa fa-money"></i>POR VENDEDOR</a></li>
+                    <li><a href="/antonio/public/comisiones"><i class="fa fa-money"></i>POR VENDEDOR</a></li>
                 </ul>
             </li>
             

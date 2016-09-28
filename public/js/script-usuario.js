@@ -141,6 +141,38 @@ function Carga(){
 }
 
 
+<<<<<<< HEAD
+=======
+function Eliminar(btn){
+	var route = "/antonio/public/sucursal/"+btn.value+"";
+	var token = $("#token").val();
+	$.ajax({
+		url: route,
+		headers: {'X-CSRF-TOKEN': token},
+		type: 'DELETE',
+		dataType: 'json',
+		success: function(){
+			Carga();
+			$("#msj-success").fadeIn();
+		}
+	});
+}
+
+
+function Mostrar(btn){
+	var route = "/antonio/public/sucursal/"+btn.value+"/edit";
+
+	$.get(route, function(res){
+		
+		$("#id").val(res.id);
+		$("#CodSucursal").val(res.CodSucursal);
+		$("#NombreSucursal").val(res.NombreSucursal);
+		$("#Direccion").val(res.Direccion);
+
+	});
+}
+
+>>>>>>> origin/master
 
 
 
@@ -155,6 +187,10 @@ $(document).on('click', '#actualizar',function (){
 	var dato1 = $("#CodSucursal").val();
 	var dato2 = $("#NombreSucursal").val();
 	var dato3 = $("#Direccion").val();
+<<<<<<< HEAD
+=======
+	
+>>>>>>> origin/master
 	var route = "/antonio/public/sucursal/"+value+"";
 	var token = $("#token").val();
 

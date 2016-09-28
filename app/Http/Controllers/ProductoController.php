@@ -13,6 +13,21 @@ use Session;
 use Redirect;
 
 class ProductoController extends Controller {
+
+
+	public function faltante(Request $request){
+
+		if ($request->ajax()) {
+
+
+		$sucursal = Auth::user()->sucursal;
+		$faltantes = producto::where('stock','<', 8)->where('sucursal',$sucursal)->select('CodProducto','stock')->get();
+		
+		return response()->json($faltantes);		
+	}
+
+
+	}
 	
 	public function autocomplete(Request $request)
 	{

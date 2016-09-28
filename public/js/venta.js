@@ -109,11 +109,6 @@ $("#total" ).focus(function() {
 // });
 
 
-function confirmar(){
-      //un confirm
-
-};
-
 
 
 
@@ -323,7 +318,11 @@ $("#btnRecorrer").click(function () {
 
             })//fin recorrido moneda
 
+<<<<<<< HEAD
                         swal("SUCCESSFULL!", "VENTA AGREGADA CORRECTAMENTE.", "success", window.location.href = "/antonio/public/venta/ventausuario");
+=======
+                        swal("SUCCESSFULL!", "VENTA AGREGADA CORRECTAMENTE.", "success");
+>>>>>>> origin/master
 
 
 
@@ -334,7 +333,11 @@ $("#btnRecorrer").click(function () {
                         swal("CANCELADO","UD A CANCELADO LA OPERACION ","error");   
                     }
 
+<<<<<<< HEAD
                 //window.location.href = "/antonio/public/venta";        
+=======
+                //window.location.href = "/fff/public/venta";        
+>>>>>>> origin/master
                 });
     
 });

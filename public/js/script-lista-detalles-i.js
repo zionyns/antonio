@@ -14,7 +14,7 @@ function Carga(){
 	var ingreso=$("#ingreso").text();
 
 	var tablaDatos = $('#Tdetalles > tbody');
-	var route = "/Sonesta2/public/detalleingreso/detalles/"+ingreso+"";
+	var route = "/antonio/public/detalleingreso/detalles/"+ingreso+"";
 
 	
 
@@ -39,7 +39,7 @@ function Carga(){
 }
 
 function Mostrar(btn){
-	var route = "/Sonesta2/public/detalleingreso/"+btn.value+"/edit";
+	var route = "/antonio/public/detalleingreso/"+btn.value+"/edit";
 
 	$.get(route, function(res){
 		
@@ -67,7 +67,7 @@ $(document).on('click', '#actualizar',function (){
 	var precio = $("#precio").val();
 	
 
-	var route = "/Sonesta2/public/detalleingreso/"+value+"";
+	var route = "/antonio/public/detalleingreso/"+value+"";
 	var token = $("#token").val();
 
 
@@ -99,7 +99,7 @@ $(document).on('click', '#actualizar',function (){
 
 
 function Eliminar(btn){
-	var route = "/Sonesta2/public/detalleventa/"+btn.value+"";
+	var route = "/antonio/public/detalleventa/"+btn.value+"";
 	var token = $("#token").val();
 	$.ajax({
 		url: route,

@@ -86,7 +86,7 @@ class AuthController extends Controller {
 
 	public function showhome()
 	{
-		return view('index');
+		return view('notificaciones');
 	}
 
 
